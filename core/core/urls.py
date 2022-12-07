@@ -26,6 +26,10 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('shop', views.shop, name='shop'),
     path('lodging', views.lodging, name='lodging'),
+    path('lessons', views.lessons, name='lessons'),
+    path('rentals', views.rentals, name='rentals'),
+    path('club', views.club, name='club'),
+    path('facilities', views.facilities, name='facilities'),
 ]
 
 

@@ -11,8 +11,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/logo.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{% static 'machete/assets/img/logo.png' %}" rel="icon">
+  
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -44,18 +44,19 @@
   
             <nav id="navbar" class="navbar order-last order-lg-0">
               <ul>
-                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                <li><a class="nav-link scrollto" href="#about">About</a></li>
-                <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
-                <li><a class="nav-link scrollto " href="#portfolio">Gallery</a></li>
-                <li class="dropdown"><a href="#pricing"><span>Lessons & Services</span> <i class="bi bi-chevron-down"></i></a>
+                <li><a class="nav-link scrollto active" href="{% url 'index' %}#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'index' %}#about">About</a></li>
+                
+                <li class="dropdown"><a href="{% url 'index' %}#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
                   <ul>
-                    <li><a class="nav-link scrollto" href="#pricing">Lessons</a></li>
-                    <li><a class="nav-link scrollto" href="#rentals">Rentals</a></li>
-                    <li><a class="nav-link scrollto" href="#club">Beach Club</a></li>
-                    <li><a class="nav-link scrollto" href="#facilities">Facilities</a></li>
-                    <li><a class="nav-link scrollto" href="#lodging">Lodging</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'lessons' %}">Lessons</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'rentals' %}">Rentals</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'club' %}">Beach Club</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'facilities' %}">Facilities</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'lodging' %}">Lodging</a></li>
                   </ul>
+                <li><a class="nav-link scrollto " href="{% url 'index' %}#portfolio">Gallery</a></li>
+                
                 <li class="dropdown"><a href="#"><span>Knowledge</span> <i class="bi bi-chevron-down"></i></a>
                   <ul>
                     <li><a href="#">KiteSurfing</a></li>
@@ -72,7 +73,7 @@
                     
                   </ul>
                 </li>
-                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'index' %}#contact">Contact</a></li>
               </ul>
               <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -114,8 +115,8 @@
  <!-- ======= Footer ======= -->
  <footer id="footer">
     <div class="container">
-      <h3>Machete Kites</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <h3>MACHETE</h3>
+      <p>WING SURF KITE & FOIL</p>
       <div class="social-links">
         <a href="https://twitter.com/machetekitespty" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="https://www.facebook.com/machetepuntachame" class="facebook"><i class="bx bxl-facebook"></i></a>

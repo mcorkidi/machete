@@ -15,5 +15,20 @@ def shop(request):
 
 def lodging(request):
 
-
     return render(request, 'machete/lodging.html')
+
+def lessons(request):
+
+    return render(request, 'machete/lessons.html')
+
+def rentals(request):
+
+    return render(request, 'machete/rentals.html')
+
+def club(request):
+
+    return render(request, 'machete/club.html')
+
+def facilities(request):
+
+    return render(request, 'machete/facilities.html')
