@@ -19,6 +19,83 @@
     <section id="pricing" class="pricing">
         <div class="container">
 
+
+
+            <div id="premium" class="modal fade" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content p-3">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>  
+                        <div class="row"> 
+                            <div class="card" style="width: 18rem;">
+                                <img src="{% static 'machete/assets/img/lodging/premium_cabin.jpeg' %}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text">The Premium Cabin is its own free standing building just a couple steps from 
+                                    the beach. It has its own private bathroom and chill space. </p>
+                                </div>
+                            </div>
+                            
+                            <div class="card" style="width: 18rem;">
+                                <img src="{% static 'machete/assets/img/lodging/premium_cabin_interior.jpeg' %}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text">Inside you have a queen size bed where 2 can fit comfortably. You get full 
+                                    housekeeping service so you just need to worry about enjoying your time at Machete. </p>
+                                </div>
+                            </div>
+                        
+                        </div> 
+                                
+                    </div>
+                </div>
+            </div>
+
+            <div id="glamping" class="modal fade" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content p-3">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>   
+                        
+                        <div class="row"> 
+                            <div class="card" style="width: 18rem;">
+                                <img src="{% static 'machete/assets/img/lodging/cabin.jpeg' %}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text">The Glamping Cabins are solid built tent types of structures with one queen size 
+                                    bed inside. The bathroom is shared betweeen the 4 cabins. Being just a couple steps from the beach. You will 
+                                    be kiting as soon as you feel the wind. 
+                                </p>
+                                </div>
+                            </div>
+                            
+                            <div class="card" style="width: 18rem;">
+                                <img src="{% static 'machete/assets/img/lodging/cabin_interior.jpeg' %}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text">Inside you have a queen size bed where 2 can fit comfortably. You get full 
+                                    housekeeping service so you just need to worry about enjoying your time at Machete. </p>
+                                </div>
+                            </div>
+                        
+                        </div> 
+        
+                                
+                    </div>
+                </div>
+            </div>
+
+            <div id="camp" class="modal fade" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content p-3">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>   
+                    
+        
+                                
+                    </div>
+                </div>
+            </div>
+
             <div class="section-title">
                 <h2>Machete Lodging</h2>
                 <p>Stay close to the action.</p>
@@ -41,7 +118,11 @@
                     <li>Beach club daypass included</li>
                     </ul>
                     <div class="btn-wrap">
-                    <a href="{% url 'lodging' %}" class="btn-buy">Learn More</a>
+                    <!-- <a href="{% url 'lodging' %}" class="btn-buy">Learn More</a> -->
+                    <a class="btn-buy" data-bs-toggle="modal" data-bs-target="#premium" id="premium" name="premium">Learn More </a>
+                    <br><br>
+                    <a href=" https://wa.me/50766747772?text=I'm%20interested%20in%20the%20premium%20cabin" 
+                    class="btn-buy" target="_blank">Book Now <i class="bx bxl-whatsapp"></i></a>
                     </div>
                 </div>
                 </div>
@@ -61,7 +142,11 @@
                     <li>$900/month pricing available</li>
                     </ul>
                     <div class="btn-wrap">
-                    <a href="{% url 'lodging' %}" class="btn-buy">Learn More</a>
+                    <!-- <a href="{% url 'lodging' %}" class="btn-buy">Learn More</a> -->
+                    <a class="btn-buy" data-bs-toggle="modal" data-bs-target="#glamping" id="glamping" name="glamping">Learn More </a>
+                    <br><br>
+                    <a href=" https://wa.me/50766747772?text=I'm%20interested%20in%20the%20glamping%20cabin" 
+                    class="btn-buy" target="_blank">Book Now <i class="bx bxl-whatsapp"></i></a>
                     </div>
                 </div>
                 </div>
@@ -78,7 +163,9 @@
                     <li>Beachside camping</li>
                     </ul>
                     <div class="btn-wrap">
-                    <a href="{% url 'lodging' %}" class="btn-buy">Learn More</a>
+                        
+                        <a href=" https://wa.me/50766747772?text=I'm%20interested%20in%20camping%20at%20Machete" 
+                        class="btn-buy" target="_blank">Book Now <i class="bx bxl-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
