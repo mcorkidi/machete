@@ -262,8 +262,21 @@
         <div class="container">
   
           <div class="text-center title">
-            <h3>Current Conditions</h3>
+            <h3>Current Conditions and Forecast</h3>
             <p>Don't miss a session, or just dream about it. </p>
+            <br>
+            <script id="wg_fwdg_33095_100_1673239000981">
+              (function (window, document) {
+                var loader = function () {
+                  var arg = ["s=33095" ,"m=100","uid=wg_fwdg_33095_100_1673239000981" ,"wj=knots" ,"tj=c" ,"waj=m" ,"odh=0" ,"doh=24" ,"fhours=240" ,"hrsm=2" ,"vt=forecasts" ,"lng=en" ,"idbs=1" ,"ts=2" ,"p=WINDSPD,GUST,SMER"];
+                  var script = document.createElement("script");
+                  var tag = document.getElementsByTagName("script")[0];
+                  script.src = "https://www.windguru.cz/js/widget.php?"+(arg.join("&"));
+                  tag.parentNode.insertBefore(script, tag);
+                };
+                window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+              })(window, document);
+              </script>
           </div>
   
           <!-- <div class="row counters position-relative">
@@ -292,18 +305,7 @@
           
         </div>
       </section><!-- End Counts Section -->
-      <script id="wg_fwdg_33095_100_1673239000981">
-        (function (window, document) {
-          var loader = function () {
-            var arg = ["s=33095" ,"m=100","uid=wg_fwdg_33095_100_1673239000981" ,"wj=knots" ,"tj=c" ,"waj=m" ,"odh=0" ,"doh=24" ,"fhours=240" ,"hrsm=2" ,"vt=forecasts" ,"lng=en" ,"idbs=1" ,"ts=2" ,"p=WINDSPD,GUST,SMER"];
-            var script = document.createElement("script");
-            var tag = document.getElementsByTagName("script")[0];
-            script.src = "https://www.windguru.cz/js/widget.php?"+(arg.join("&"));
-            tag.parentNode.insertBefore(script, tag);
-          };
-          window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
-        })(window, document);
-        </script>
+      
       <!-- ======= Portfolio Section ======= -->
       <section id="portfolio" class="portfolio">
         <div class="container">
