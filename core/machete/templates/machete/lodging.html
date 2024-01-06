@@ -7,7 +7,7 @@
       <div class="row justify-content-center">
         <div class="col-xl-8">
           <h1>MACHETE</h1>
-          <h2>CAMPING GLAMPING </h2>
+          <h2>ACCOMODATION </h2>
           <a href="https://www.youtube.com/embed/YWQSJhJLHug" class="glightbox play-btn mb-4"></a>
           </div>
       </div>
@@ -61,7 +61,7 @@
                             <div class="card" style="width: 18rem;">
                                 <img src="{% static 'machete/assets/img/lodging/cabin.jpeg' %}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                <p class="card-text">The Glamping Cabins are solid built tent types of structures with one queen size 
+                                <p class="card-text">The Private Cabins are solid built tent types of structures with one queen size 
                                     bed inside. The bathroom is shared betweeen the 4 cabins. Being just a couple steps from the beach. You will 
                                     be kiting as soon as you feel the wind. 
                                 </p>
@@ -73,6 +73,38 @@
                                 <div class="card-body">
                                 <p class="card-text">Inside you have a queen size bed where 2 can fit comfortably. You get full 
                                     housekeeping service so you just need to worry about enjoying your time at Machete. </p>
+                                </div>
+                            </div>
+                        
+                        </div> 
+        
+                                
+                    </div>
+                </div>
+            </div>
+
+            <div id="camping" class="modal fade" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content p-3">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>   
+                        
+                        <div class="row"> 
+                            <div class="card" style="width: 18rem;">
+                                <img src="{% static 'machete/assets/img/lodging/cabin.jpeg' %}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text">Bring your own tent and set it up directly next to the beach so that you can sleep in the front row and wake up with the best view.
+                                </p>
+                                </div>
+                            </div>
+                            
+                            <div class="card" style="width: 18rem;">
+                                <img src="{% static 'machete/assets/img/lodging/cabin_interior.jpeg' %}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <p class="card-text">Camper vans are welcome on our huge parking lot which is away from 
+                                    the main road. Enjoy a peaceful night and profit of shared bathrooms, water supply and much more.
+                                </p>
                                 </div>
                             </div>
                         
@@ -97,7 +129,7 @@
             </div>
 
             <div class="section-title">
-                <h2>Machete Lodging</h2>
+                <h2>Accomodation</h2>
                 <p>Stay close to the action.</p>
             </div>
 
@@ -112,9 +144,9 @@
                     
                     <li>Private bathroom inside the cabin</li>
                     <li>Queen size bed</li>
-                    <li>Cleans Sheets</li>
-                    <li>Clean Towels</li>
-                    <li>Daily Housekeeping</li>
+                    <li>Clean sheets</li>
+                    <li>Clean towels</li>
+                    <li>Daily housekeeping</li>
                     <li>Beach club daypass included</li>
                     </ul>
                     <div class="btn-wrap">
@@ -130,16 +162,16 @@
                 <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
                 <div class="box">
                     
-                    <h3>Glamping Cabin</h3>
+                    <h3>Private Cabin</h3>
                     <h4><sup>$</sup>40<span> / night + tax</span></h4>
                     <ul>
                     <li>Queen size bed</li>
-                    <li>Cleans Sheets</li>
-                    <li>Clean Towels</li>
-                    <li>Daily Housekeeping</li>
+                    <li>Clean sheets</li>
+                    <li>Clean towels</li>
+                    <li>Daily housekeeping</li>
                     <li>Shared bathroom</li>
                     <li>Beach club daypass included</li>
-                    <li>$900/month pricing available</li>
+                    <li>Reduced pricing for longterm stays</li>
                     </ul>
                     <div class="btn-wrap">
                     <!-- <a href="{% url 'lodging' %}" class="btn-buy">Learn More</a> -->
@@ -163,7 +195,8 @@
                     <li>Beachside camping</li>
                     </ul>
                     <div class="btn-wrap">
-                        
+                        <a class="btn-buy" data-bs-toggle="modal" data-bs-target="#camping" id="camping" name="camping">Learn More </a>
+                        <br><br>
                         <a href=" https://wa.me/50766747772?text=Hi,%20I'm%20interested%20in%20camping%20at%20Machete" 
                         class="btn-buy" target="_blank">Book Now <i class="bx bxl-whatsapp"></i></a>
                     </div>
