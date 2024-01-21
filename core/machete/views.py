@@ -32,3 +32,7 @@ def club(request):
 def facilities(request):
 
     return render(request, 'machete/facilities.html')
+
+def trips(request):
+
+    return render(request, 'machete/trips.html')

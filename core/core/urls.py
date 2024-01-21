@@ -30,6 +30,7 @@ urlpatterns = [
     path('rentals', views.rentals, name='rentals'),
     path('club', views.club, name='club'),
     path('facilities', views.facilities, name='facilities'),
+    path('trips', views.trips, name='trips'),
 ]
 
 
