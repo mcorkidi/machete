@@ -65,8 +65,6 @@
                   <ul>
                     <li><a class="nav-link scrollto" href="{% url 'lessons' %}">Lessons</a></li>
                     <li><a class="nav-link scrollto" href="{% url 'rentals' %}">Rental Gear</a></li>
-                    
-                    
                     <li><a class="nav-link scrollto" href="{% url 'trips' %}">Trips</a></li>
                   </ul>
                 </li>
@@ -79,12 +77,16 @@
                   </ul>
                 </li>
                 <li class="dropdown"><a class="nav-link scrollto " href="{% url 'lodging' %}"><span>Accomodation & Restaurant</span><i class="bi bi-chevron-down"></i></a>
-                  <li><a class="nav-link scrollto" href="{% url 'lodging' %}">Accomodation</a></li>
-                  <li><a class="nav-link scrollto" href="{% url 'index' %}">Restaurant</a></li>
+                  <ul>
+                    <li><a class="nav-link scrollto" href="{% url 'lodging' %}">Accomodation</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'index' %}">Restaurant</a></li>
+                  </ul>
                 </li>
                 <li class="dropdown"><a class="nav-link scrollto " href="{% url 'index' %}#counts"><span>Conditions</span><i class="bi bi-chevron-down"></i></a>
-                  <li><a class="nav-link scrollto " href="{% url 'index' %}">Kie Spot</a></li>
-                  <li><a class="nav-link scrollto " href="{% url 'index' %}#counts">Forecast & Live Conditions</a></li>
+                  <ul>
+                    <li><a class="nav-link scrollto " href="{% url 'index' %}">Kie Spot</a></li>
+                    <li><a class="nav-link scrollto " href="{% url 'index' %}#counts">Forecast & Live Conditions</a></li>
+                  </ul>
                 </li>
                 <li><a class="nav-link scrollto " href="{% url 'index' %}#brands">Our Brands</a></li>
                 <li><a class="nav-link scrollto " href="{% url 'index' %}#contact">Contact</a></li>
