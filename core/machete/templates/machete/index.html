@@ -535,9 +535,37 @@
           </div>
         </div>
   
-        <div>
+        <!-- <div>
           <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.3975237685268!2d-79.70408138521606!3d8.653689593781777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8facc1acdf317bd7%3A0x2610077b70f72e19!2sMachete%20WING%20SURF%20KITE%20%26%20FOIL!5e0!3m2!1sen!2scr!4v1669953780577!5m2!1sen!2scr" frameborder="0" allowfullscreen></iframe>
-        </div>
+        </div> -->
+
+        <div id="mapContainer"></div>
+
+<script>
+  function loadGoogleMap() {
+    var mapContainer = document.getElementById('mapContainer');
+    var iframe = document.createElement('iframe');
+    iframe.style.border = '0';
+    iframe.style.width = '100%';
+    iframe.style.height = '350px';
+    iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.3975237685268!2d-79.70408138521606!3d8.653689593781777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8facc1acdf317bd7%3A0x2610077b70f72e19!2sMachete%20WING%20SURF%20KITE%20%26%20FOIL!5e0!3m2!1sen!2scr!4v1669953780577!5m2!1sen!2scr"; // Add your Google Maps URL
+    iframe.frameborder = '0';
+    iframe.allowfullscreen = true;
+    mapContainer.appendChild(iframe);
+  }
+
+  // Call the function when the user scrolls to the map container
+  window.addEventListener('scroll', function () {
+    var mapContainer = document.getElementById('mapContainer');
+    var rect = mapContainer.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      loadGoogleMap();
+      // Remove the event listener after loading to avoid unnecessary calls
+      window.removeEventListener('scroll', arguments.callee);
+    }
+  });
+</script>
+
 
         <div class="container">
   
