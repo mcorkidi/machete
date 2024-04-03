@@ -2,10 +2,68 @@
 {% block body %}
 {% load static %}
 
+<section id="spot" class="d-flex flex-column justify-content-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+          <h1>SPOT AND CONDITIONS</h1>
+          
+          </div>
+      </div>
+    </div>
+  </section>
 
 
+  <section id="about" class="about">
+    <div class="container">
+        <div class="section-title">
+            <h1>Panama’s <b>Wind Mecca</b></h1>
+            <div class="row content">
+                <div class="col-lg-6">
+                    <br>
+                    <p>With its long beaches and consistent winds, Punta Chame is Panama’s 
+                        premier location for windsports. Machete is located at the end of the 
+                        Chame peninsula, offering a large launching and landing spot at any tide. 
+                        You can find the current wind conditions below to make the maximum out of 
+                        your session!</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="{% static 'machete/assets/img/kites-conditions.jpg' %}" style="width:600px"  alt="kites">
+                </div>
+            </div>
+        </div>
+    </div>
 
+  </section>
 
+<!-- ======= Counts Section ======= -->
+<section id="counts" class="counts">
+    <div class="container">
 
+      <div class="text-center title">
+        <h3>Forecast & Live Conditions</h3>
+        <p>Don't miss a session, or just dream about it. </p>
+        <br>
+        <script async id="wg_fwdg_33095_100_1673239000981" defer>
+          (function (window, document) {
+            var loader = function () {
+              var arg = ["s=33095" ,"m=100","uid=wg_fwdg_33095_100_1673239000981" ,"wj=knots" ,"tj=c" ,"waj=m" ,"odh=0" ,"doh=24" ,"fhours=240" ,"hrsm=2" ,"vt=forecasts" ,"lng=en" ,"idbs=1" ,"ts=2" ,"p=WINDSPD,GUST,SMER"];
+              var script = document.createElement("script");
+              var tag = document.getElementsByTagName("script")[0];
+              script.src = "https://www.windguru.cz/js/widget.php?"+(arg.join("&"));
+              tag.parentNode.insertBefore(script, tag);
+            };
+            window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+          })(window, document);
+          </script>
+        <br>
+        <iframe src="https://tempestwx.com/station/121394/graph/301929/wind/2"  width="100%" height="700" style="border:1px solid black;"></iframe>
+
+      </div>
+      
+     
+      
+    </div>
+  </section><!-- End Counts Section -->
 
 {% endblock %}

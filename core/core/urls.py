@@ -31,6 +31,9 @@ urlpatterns = [
     path('club', views.club, name='club'),
     path('facilities', views.facilities, name='facilities'),
     path('trips', views.trips, name='trips'),
+    path('spot', views.spot, name='spot'),
+    path('restaurant', views.restaurant, name='restaurant'),
+    path('contact', views.contact, name='contact'),
 ]
 
 

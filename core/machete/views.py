@@ -36,3 +36,15 @@ def facilities(request):
 def trips(request):
 
     return render(request, 'machete/trips.html')
+
+def spot(request):
+
+    return render(request, 'machete/spot.html')
+
+def restaurant(request):
+
+    return render(request, 'machete/restaurant.html')
+
+def contact(request):
+
+    return render(request, 'machete/contact.html')

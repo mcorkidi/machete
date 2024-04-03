@@ -2271,3 +2271,463 @@ section {
     margin-bottom: 30px;
   }
 }
+
+
+
+/*--------------------------------------------------------------
+# Spot Section
+--------------------------------------------------------------*/
+#spot {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/spot.jpg") center;
+  background-size: cover;
+  position: relative;
+}
+
+#spot:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#spot .container {
+  padding-top: 72px;
+  position: relative;
+  text-align: center;
+}
+
+#spot h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#spot h2 {
+  color: #eee;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+#spot .play-btn {
+  width: 94px;
+  height: 94px;
+  margin: 0 auto;
+  background: radial-gradient(#e57e01 50%, rgba(153, 122, 0, 0.4) 52%);
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+#spot .play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+#spot .play-btn::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate-btn 3s;
+  animation: pulsate-btn 3s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(153, 135, 0, 0.7);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+#spot .play-btn:hover::after {
+  border-left: 15px solid #e57e01;
+  transform: scale(20);
+}
+
+#spot .play-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  -webkit-animation: none;
+  animation: none;
+  border-radius: 0;
+}
+
+@media (min-width: 1024px) {
+  #spot {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #spot h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #spot h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Restaurant Section
+--------------------------------------------------------------*/
+#restaurant {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/restaurant.jpg") center;
+  background-size: cover;
+  position: relative;
+}
+
+#restaurant:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#restaurant .container {
+  padding-top: 72px;
+  position: relative;
+  text-align: center;
+}
+
+#restaurant h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#restaurant h2 {
+  color: #eee;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+#restaurant .play-btn {
+  width: 94px;
+  height: 94px;
+  margin: 0 auto;
+  background: radial-gradient(#e57e01 50%, rgba(153, 122, 0, 0.4) 52%);
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+#restaurant .play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+#restaurant .play-btn::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate-btn 3s;
+  animation: pulsate-btn 3s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(153, 135, 0, 0.7);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+#restaurant .play-btn:hover::after {
+  border-left: 15px solid #e57e01;
+  transform: scale(20);
+}
+
+#restaurant .play-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  -webkit-animation: none;
+  animation: none;
+  border-radius: 0;
+}
+
+@media (min-width: 1024px) {
+  #restaurant {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #restaurant h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #restaurant h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Chef
+--------------------------------------------------------------*/
+.chef {
+  background: url("../img/chef-bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 80px 0 60px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.chef::before {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.chef .title {
+  position: relative;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.chef img {
+  position: relative; /* Set images to position relative */
+  z-index: 2; /* Ensure images are stacked above the overlay */
+  /* Add any additional styling for the images */
+}
+
+/* Style for the <p> elements within the .chef section */
+.chef p {
+  background-color: rgba(255, 255, 255, 0.232); /* White semi-transparent background */
+  padding: 10px; /* Add padding to create space around the text */
+  border-radius: 5px; /* Add rounded corners for aesthetics */
+  color: white; /* Change font color to white */
+  position: relative; /* Set position to make z-index work */
+}
+
+.chef .title h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fcfcfc;
+  z-index: 2;
+}
+
+.chef .counters span {
+  font-size: 48px;
+  display: block;
+  font-weight: 700;
+  color: #e57e01;
+}
+
+
+@media (min-width: 1200px) {
+  .chef {
+    background-attachment: fixed;
+  }
+}
+
+/*--------------------------------------------------------------
+# Contact-head Section
+--------------------------------------------------------------*/
+#contact-head {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/contact.jpg") center;
+  background-size: cover;
+  position: relative;
+}
+
+#contact-head:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#contact-head .container {
+  padding-top: 72px;
+  position: relative;
+  text-align: center;
+}
+
+#contact-head h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#contact-head h2 {
+  color: #eee;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+/*--------------------------------------------------------------
+# Brands Index Section
+--------------------------------------------------------------*/
+.brands .brands-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  background: #e57e01;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.brands .brands-btn:hover {
+  background: #00b371;
+}
+
+/*--------------------------------------------------------------
+# Restaurant Index Section
+--------------------------------------------------------------*/
+
+.restaurant-index {
+  background: url("../img/chef-bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 80px 0 60px 0;
+  position: relative;
+  z-index: 2;
+}
+
+
+.restaurant-index .restaurant-index-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  background: #e57e01;
+  color: #fff;
+  border-radius: 50px;
+}
+
+
+
+.restaurant-index .restaurant-index-btn:hover {
+  background: #00b371;
+}
+
+
+.restaurant-index img {
+  position: relative; /* Set images to position relative */
+  z-index: 2; /* Ensure images are stacked above the overlay */
+  /* Add any additional styling for the images */
+}
+
+/* Style for the <p> elements within the .restaurant-index section */
+.restaurant-index p {
+  background-color: rgba(255, 255, 255, 0.232); /* White semi-transparent background */
+  padding: 10px; /* Add padding to create space around the text */
+  border-radius: 5px; /* Add rounded corners for aesthetics */
+  color: white; /* Change font color to white */
+  position: relative; /* Set position to make z-index work */
+}
+
+.restaurant-index .title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fcfcfc;
+  z-index: 2;
+}
+
+
+@media (min-width: 1200px) {
+  .restaurant-index {
+    background-attachment: fixed;
+  }
+}

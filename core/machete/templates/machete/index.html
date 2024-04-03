@@ -8,11 +8,11 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-8">
-            <h1>MACHETE</h1>
-            <h2>WING SURF KITE & FOIL</h2>
+            <h2>MACHETE - WING SURF KITE & FOIL IN PUNTA CHAME, PANAMA</h2>
+            <h1>Feel the Breeze, Ride the Wave</h1>
             
             
-            <a href="https://www.youtube.com/embed/m7zRaT1MxRM" class="glightbox play-btn mb-4"></a>
+            <a target="_blank" href="https://www.youtube.com/embed/m7zRaT1MxRM" class="glightbox play-btn mb-4"></a>
             </div>
         </div>
       </div>
@@ -51,9 +51,16 @@
             </div>
         </div>
   
-          <div class="section-title">
-            <h2>About Us</h2>
-            <p>We boast 25 years of expertise as a premier wing surf, kite, and foil school, shop, and club. Our IKO certified instructors and top-notch equipment ensure a secure, enjoyable, and rapid learning journey for you.</p>
+        <div class="section-title">
+            <h2>We are MACHETE</h2>
+            <p>Wind, waves and water are the ingredients for some of the most unforgettable moments. 
+              Punta Chame offers endless sandy beaches and from December to April, some of the most 
+              consistent winds in Central America. Join the Machete family, make new friends, and 
+              create memories that last a for a lifetime. </p><br>
+              <p>
+              We boast 25 years of expertise as a premier wing surf, kite, and foil school, shop, 
+              and club. Our IKO certified instructors and top-notch equipment ensure a secure, 
+              enjoyable, and rapid learning journey for you.</p>
           </div>
   
           <div class="row content">
@@ -75,6 +82,18 @@
               
             </div>
           </div>
+          <div class="row mt-4">
+            <div class="col-lg-6">
+              <img src="{% static 'machete/assets/img/hero-bg.jpg' %}"  style="width:500px;height:600px;" alt="">
+            </div>
+            <div class="col-lg-3 ">
+              <img src="{% static 'machete/assets/img/winger1.jpg' %}"  style="width:250px;height:600px;" alt="">
+            </div>
+            <div class="col-lg-3">
+              <img class="mb-2" src="{% static 'machete/assets/img/friends.jpg' %}"  style="width:250px;height:295px;" alt="">
+              <img src="{% static 'machete/assets/img/cluber.jpg' %}"  style="width:250px;height:300px;" alt="">
+            </div>
+          </div>
   
         </div>
       </section><!-- End About Us Section -->
@@ -85,7 +104,10 @@
   
           <div class="section-title">
             <h2>Services</h2>
-            <p>Our services will bring you here, our vibe will keep you here. In season you will find that we are in a wind sports paradise.</p>
+            <p>We are dedicated to spreading our enthusiasm for kitesurfing and wingfoiling, 
+              as they are the best adventure sports on the planet. From beginner lessons to 
+              advanced courses, visit us at Panama’s premier destination for windsports -
+              Punta Chame.</p>
           </div>
   
           <div class="row">
@@ -146,8 +168,9 @@
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
               <div class="icon-box">
                 <div class="icon"><i class="bx bx-restaurant"></i></div>
-                <h4><a href="">Restaurant</a></h4>
-                <p>Open for breakfast, lunch and dinner. Enjoy fresh healthy food that keeps you flying over water all day long. </p>
+                <h4><a href="{% url 'restaurant' %}">Restaurant</a></h4>
+                <a href="{% url 'restaurant' %}"><p>Open for breakfast, lunch and dinner. 
+                  Enjoy fresh healthy food that keeps you flying over water all day long. </p></a>
               </div>
             </div>
   
@@ -208,6 +231,56 @@
         </div>
       </section><!-- End Features Section -->
   
+      <section id="brands" class="brands">
+        <div class="container">
+          <div class="section-title mt-5 mt-lg-0">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 p-2">
+                <img src="{% static 'machete/assets/img/stay.jpg' %}"  style="width:500px;" alt="">
+                </div>
+              <div class="col-lg-6 col-md-6">
+                <h2>STAY WITH US</h2>
+                <p>Our cozy cabañas offer a tranquil retreat right on the edge
+                  of adventure. Located just next to our beachclub, they are 
+                  your perfect haven for relaxation after a day of kiteboarding 
+                  or wingfoiling. Wake up to the sound of the waves and enjoy the 
+                  beauty of the surrounding nature.</p>
+                  <br>
+                <div class="d-flex justify-content-end">
+                  <a class="brands-btn align-middle" href="{% url 'lodging' %}">Learn More</a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="restaurant-index" class="restaurant-index">
+        <div class="container">
+          <div class="section-title mt-5 mt-lg-0">
+            <div class="row">
+              
+              <div class="col-lg-6 col-md-6">
+                <div class="title"><h2>RESTAURANT</h2></div>
+                <p>Our culinary oasis is the ideal spot to refuel and relax after a day on the water.
+                  Try our menu that marries authentic Italian flavors with fresh and local
+                  ingredients. Served in a relaxed atmosphere that captures the essence of the
+                  Machete beach life. Come hungry, leave happy, and share your epic water
+                  adventure with others.</p>
+                <br>
+                <a class="restaurant-index-btn align-middle" href="{% url 'restaurant' %}">Learn More</a>
+                
+              </div>
+              <div class="col-lg-6 col-md-6 p-2">
+                <img src="{% static 'machete/assets/img/restaurant.jpg' %}"  style="width:500px;" alt="">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- ======= Clients Section ======= -->
       
       <section id="brands" class="clients ">
@@ -265,358 +338,11 @@
         </div>
       </section><!-- End Clients Section -->
   
-      <!-- ======= Counts Section ======= -->
-      <section id="counts" class="counts">
-        <div class="container">
-  
-          <div class="text-center title">
-            <h3>Forecast & Live Conditions</h3>
-            <p>Don't miss a session, or just dream about it. </p>
-            <br>
-            <script async id="wg_fwdg_33095_100_1673239000981" defer>
-              (function (window, document) {
-                var loader = function () {
-                  var arg = ["s=33095" ,"m=100","uid=wg_fwdg_33095_100_1673239000981" ,"wj=knots" ,"tj=c" ,"waj=m" ,"odh=0" ,"doh=24" ,"fhours=240" ,"hrsm=2" ,"vt=forecasts" ,"lng=en" ,"idbs=1" ,"ts=2" ,"p=WINDSPD,GUST,SMER"];
-                  var script = document.createElement("script");
-                  var tag = document.getElementsByTagName("script")[0];
-                  script.src = "https://www.windguru.cz/js/widget.php?"+(arg.join("&"));
-                  tag.parentNode.insertBefore(script, tag);
-                };
-                window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
-              })(window, document);
-              </script>
-            <br>
-            <iframe src="https://tempestwx.com/station/121394/graph/301929/wind/2"  width="100%" height="700" style="border:1px solid black;"></iframe>
-  
-          </div>
-          
-          <!-- <div class="row counters position-relative">
-  
-            <div class="col-lg-3 col-6 text-center">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Wind Speed</p>
-            </div>
-  
-            <div class="col-lg-3 col-6 text-center">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Wind Direction</p>
-            </div>
-  
-            <div class="col-lg-3 col-6 text-center">
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Low Tide</p>
-            </div>
-  
-            <div class="col-lg-3 col-6 text-center">
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p>High Tide</p>
-            </div>
-  
-          </div> -->
-          
-        </div>
-      </section><!-- End Counts Section -->
       
-      <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="portfolio">
-        <div class="container">
-  
-          <div class="section-title">
-            <h2>Gallery</h2>
-            <p>Some moments just need to be shared.</p>
-          </div>
-  
-          <!-- <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-kite">Kitesurf</li>
-                <li data-filter=".filter-wing">Wing</li>
-                <li data-filter=".filter-web">Machete</li>
-              </ul>
-            </div>
-          </div>
-  
-          <div class="row portfolio-container">
-  
-            <div class="col-lg-4 col-md-6 portfolio-item filter-kite">
-              <img src="{% static 'machete/assets/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Kite</h4>
-                <p>Kitesurf and Foil</p>
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 portfolio-item filter-kite">
-              <img src="{% static 'machete/assets/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Kitesurf</h4>
-                <p>Tailgrab</p>
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 portfolio-item filter-wing">
-              <img src="{% static 'machete/assets/img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>WingFoil</h4>
-                <p>Huge!</p>
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 portfolio-item filter-wing">
-              <img src="{% static 'machete/assets/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>WingFoil</h4>
-                <p>Itzick</p>
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 portfolio-item filter-machete">
-              <img src="{% static 'machete/assets/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Cabins</h4>
-                <p>Glamping</p>
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-  
-  
-          </div>
-  
-        </div> -->
-        
-        <div data-mc-src="500ec141-9d1e-4afe-ac7e-69b47084e97f#null"></div>
-        
-        <script 
-          src="https://cdn2.woxo.tech/a.js#63c9a90753f1c15c5a07bceb" 
-          async data-usrc>
-        </script>
-      </section><!-- End Portfolio Section -->
-  
+      
+    
      
 
-
-      <!-- ======= Faq Section ======= -->
-      <section id="faq" class="faq">
-        <div class="container-fluid">
-  
-          <div class="row">
-  
-            <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-  
-              <div class="content">
-                <h3>Frequently Asked <strong>Questions</strong></h3>
-                <p>
-                  There's always a new challenge. We always learn something new. But let's try to get ahead of ourselves.   
-                </p>
-              </div>
-  
-              <div class="accordion-list">
-                <ul>
-                  <li>
-                    <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-7">Can I pay my lessons and gear with a credit card? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                    <div id="accordion-list-7" class="collapse show" data-bs-parent=".accordion-list">
-                      <p>
-                        Yes, we take all major credit cards. 
-                      </p>
-                    </div>
-                  </li>
-  
-                  <li>
-                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-8" class="collapsed">What happens if conditions aren't optimal for my lesson? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                    <div id="accordion-list-8" class="collapse" data-bs-parent=".accordion-list">
-                      <p>
-                        Lessons will only be done on optimal conditions. If this is not the case, you can always reschedule. 
-                      </p>
-                    </div>
-                  </li>
-  
-                  <li>
-                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-9" class="collapsed">Can I bring company while I kite? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                    <div id="accordion-list-9" class="collapse" data-bs-parent=".accordion-list">
-                      <p>
-                        Yes, the beach club is included for the kiters company so they can hang out while you kite. 
-                      </p>
-                    </div>
-                  </li>
-
-                  <li>
-                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-1" class="collapsed">What should I bring & wear to my Kite or Wing Class? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                    <div id="accordion-list-1" class="collapse" data-bs-parent=".accordion-list">
-                        <p>
-                            Bring your swim cloth and a lot of sun protection (sunscreen, sunglasses, hat).
-                        </p>
-                    </div>
-                </li>
-                
-                <li>
-                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed">Can I pay my lessons and gear with a credit card? How can I pay my lessons, accommodation, or restaurant bill? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                    <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                        <p>
-                            You can pay with credit and debit cards, bank transfers, and cash.
-                        </p>
-                    </div>
-                </li>
-                
-                <li>
-                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed">Can I bring my own food & beverages? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                    <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                        <p>
-                            As we have our own restaurant, there is no need to bring your own food & beverages. If you still want to bring something, you can consume it on the beach or in your private cabin.
-                        </p>
-                    </div>
-                </li>
-                
-                <li>
-                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed">Can everyone take kite or wing lessons? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                    <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
-                        <p>
-                            Adults or kids, men or women, anyone can learn. With today's technological advances in design, the sport has never been safer. Under the correct guidance, you can be up and going in no time.
-                        </p>
-                    </div>
-                </li>
-                
-                <li>
-                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-5" class="collapsed">Can I park my car at the spot? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                    <div id="accordion-list-5" class="collapse" data-bs-parent=".accordion-list">
-                        <p>
-                            We have a huge parking lot where you can station your car for free for the day.
-                        </p>
-                    </div>
-                </li>
-                
-                <li>
-                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-6" class="collapsed">How can I reach Punta Chame, Panama? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                    <div id="accordion-list-6" class="collapse" data-bs-parent=".accordion-list">
-                        <p>
-                            You can either come with your own car (approx. 1.5 hours from Panama City), take a local bus, or a transfer. Just get in contact with us, and we can help you with your travel planning.
-                        </p>
-                    </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-10" class="collapsed">What can we do when there is no wind? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-10" class="collapse" data-bs-parent=".accordion-list">
-                      <p>
-                          Relax & chill at our spot, learn how to foil behind our boat, discover the area - visit Los Cajones de Chame, hike Cerro Chame…
-                      </p>
-                  </div>
-              </li>
-              
-                
-  
-                </ul>
-              </div>
-  
-            </div>
-  
-            <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style="background-image: url({% static 'machete/assets/img/faq.jpg' %})">&nbsp;</div>
-          </div>
-  
-        </div>
-      </section><!-- End Faq Section -->
-  
-      <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
-        <div class="container">
-  
-          <div class="section-title">
-            <h2>Contact</h2>
-            <p>Write, call, or visit. You are always welcome in our humble abode.</p>
-          </div>
-        </div>
-  
-        <!-- <div>
-          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.3975237685268!2d-79.70408138521606!3d8.653689593781777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8facc1acdf317bd7%3A0x2610077b70f72e19!2sMachete%20WING%20SURF%20KITE%20%26%20FOIL!5e0!3m2!1sen!2scr!4v1669953780577!5m2!1sen!2scr" frameborder="0" allowfullscreen></iframe>
-        </div> -->
-
-        <div id="mapContainer"></div>
-
-<script>
-  function loadGoogleMap() {
-    var mapContainer = document.getElementById('mapContainer');
-    var iframe = document.createElement('iframe');
-    iframe.style.border = '0';
-    iframe.style.width = '100%';
-    iframe.style.height = '350px';
-    iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.3975237685268!2d-79.70408138521606!3d8.653689593781777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8facc1acdf317bd7%3A0x2610077b70f72e19!2sMachete%20WING%20SURF%20KITE%20%26%20FOIL!5e0!3m2!1sen!2scr!4v1669953780577!5m2!1sen!2scr"; // Add your Google Maps URL
-    iframe.frameborder = '0';
-    iframe.allowfullscreen = true;
-    mapContainer.appendChild(iframe);
-  }
-
-  // Call the function when the user scrolls to the map container
-  window.addEventListener('scroll', function () {
-    var mapContainer = document.getElementById('mapContainer');
-    var rect = mapContainer.getBoundingClientRect();
-    if (rect.top < window.innerHeight) {
-      loadGoogleMap();
-      // Remove the event listener after loading to avoid unnecessary calls
-      window.removeEventListener('scroll', arguments.callee);
-    }
-  });
-</script>
-
-
-        <div class="container">
-  
-          <div class="row mt-5">
-  
-            <div class="col-lg-4">
-              <div class="info">
-                <div class="address">
-                  <i class="ri-map-pin-line"></i>
-                  <h4>Location:</h4>
-                  <p>Punta Chame <br>
-                    We are located at the end of the road, last left on the street before U turn, 
-                    sandy street, Carr. Bejuco-Punta Chame, Panama Oeste, Panama.</p>
-                </div>
-  
-                <div class="email">
-                  <i class="ri-mail-line"></i>
-                  <h4>Email:</h4>
-                  <p>itzicklalo@gmail.com</p>
-                </div>
-  
-                <div class="phone">
-                  <i class="ri-phone-line"></i>
-                  <h4>Call:</h4>
-                  <p> +507 6674-7772</p>
-                </div>
-                <br>
-                <div class="cta-btn-container ">
-                  <a class="cta-btn align-middle" href=" https://wa.me/50766747772?text=Hi,%20I'm%20interested%20in%20Machete" target="_blank" >
-                    <i class="bx bxl-whatsapp bx-md" style="color: #25D366;"></i><h4>Contact us via WhatsApp: </h4></a>
-                </div>
-
-              </div>
-  
-            </div>
-  
-           
-              
-              
-              
-                
-              
-               
-              
-
-            
-          </div>
-  
-        </div>
-      </section><!-- End Contact Section -->
-  
     </main><!-- End #main -->
   
  
