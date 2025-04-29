@@ -1,10 +1,21 @@
-from django.shortcuts import render
-
+from django.shortcuts import render, redirect
+from .models import Contact
+from django.contrib import messages
 # Create your views here.
 
 
 def index(request):
-
+    if request.method == 'POST' and 'email_submit' in request.POST:
+        name = request.POST.get('name', '').strip()
+        email = request.POST.get('email', '').strip()
+        
+        if email:  # Basic check to avoid blank email
+            # Save the contact
+            Contact.objects.create(name=name, email=email)
+            messages.success(request, "Thank you for subscribing!")
+            return redirect('index')  # Redirect to prevent form resubmission on page refresh
+        else:
+            messages.error(request, "Please enter a valid email.")
     return render(request, 'machete/index.html')
 
 

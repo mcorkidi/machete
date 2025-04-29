@@ -347,8 +347,39 @@
   
         </div>
       </section><!-- End Clients Section -->
-  
-      
+
+      <section id="restaurant-index" class="restaurant-index">
+        <div class="container">
+          <div class="section-title col-lg-12 col-md-12 col-sm-12">
+            <div class="title"><h2>NEWSLETTER</h2></div>
+          
+                  <p class="col-md-12 col-xs-12 text-center mb-2">Get our latest news and special sales</p>
+                <form method="post">
+                  {% csrf_token %}
+                    <div class="col-xs-12">
+                      <div class="row">
+                        <div class="col-md-6 form-group">
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        
+                      </div>
+                      <div class="d-flex justify-content-center">
+                        <input class="restaurant-index-btn" name="email_submit" type="submit" value="Subscribe">
+                      </div>
+                      
+                    </div>
+                    <div class="col-xs-12 text-center">
+                      <p>You may unsubscribe at any time. </p>
+                                                                    
+                    </div>
+          
+                </form>
+            </div>
+        </div>
+      </section>
       
     
      
