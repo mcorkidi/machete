@@ -5,10 +5,10 @@ from django.db import models
 class ClickWhatsApp(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     country = models.CharField(max_length=100, default='')
-    button = models.CharField(max_length=100, default='')
-    
+    from_site = models.CharField(max_length=100, default='')
+
     def __str__(self):
-        return str(self.creation_at)
+        return str(self.created_at)
     
 class Contact(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)

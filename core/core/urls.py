@@ -34,6 +34,7 @@ urlpatterns = [
     path('spot', views.spot, name='spot'),
     path('restaurant', views.restaurant, name='restaurant'),
     path('contact', views.contact, name='contact'),
+    path('track-click/<str:link_name>/', views.track_click_ajax, name='track_click_ajax'),
 ]
 
 

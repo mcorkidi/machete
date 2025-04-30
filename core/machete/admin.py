@@ -14,7 +14,7 @@ class ContactAdmin(admin.ModelAdmin):
 
 @admin.register(ClickWhatsApp)
 class ClickWhatsAppAdmin(admin.ModelAdmin):
-    list_display = ('country', 'button', 'created_at')
-    search_fields = ('country', 'button')
+    list_display = ('country', 'from_site', 'created_at')
+    search_fields = ('country', 'from_site')
     list_filter = ('created_at',)
     ordering = ('-created_at',)
